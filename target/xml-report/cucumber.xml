@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.793">
+    <testcase classname="US014 Class Work" name="Kullanici ve Url Testi" time="20.606">
+        <failure message="null value in entry: url=null" type="java.lang.NullPointerException">
+            <![CDATA[Given kullanici "webUrl" anasayfasinda......................................failed
+When kullanici 3 saniye bekler..............................................skipped
+Then kullanici Login Portala kadar asagi iner...............................skipped
+When kullanici 3 saniye bekler..............................................skipped
+And kullanici Login Portala tiklar..........................................skipped
+When kullanici 3 saniye bekler..............................................skipped
+And kullanici diger windowa gecer...........................................skipped
+When kullanici 3 saniye bekler..............................................skipped
+And kullanici "username" kutusuna bilgileri girer...........................skipped
+When kullanici 3 saniye bekler..............................................skipped
+And kullanici "password" bolumune bilgileri girer...........................skipped
+When kullanici 3 saniye bekler..............................................skipped
+And kullanici login butonuna basar..........................................skipped
+When kullanici 3 saniye bekler..............................................skipped
+And kullanici Popup'ta cikan yazinin validation failed oldugunu test eder...skipped
+When kullanici 3 saniye bekler..............................................skipped
+And kullanici Ok diyerek Popup'i kapatir....................................skipped
+When kullanici 3 saniye bekler..............................................skipped
+And kullanici ilk sayfaya geri doner........................................skipped
+When kullanici 3 saniye bekler..............................................skipped
+And kullanici ilk sayfaya donuldugunu test eder.............................skipped
+When kullanici 3 saniye bekler..............................................skipped
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:76)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at stepDefinitions.DataTableStepDefinition.kullaniciAnasayfasinda(DataTableStepDefinition.java:19)
+	at ✽.kullanici "webUrl" anasayfasinda(file:///C:/com.batch81Cucumber/src/test/resources/features/US014_ClassWork2.feature:5)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
