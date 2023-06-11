@@ -67,7 +67,7 @@ public class AmazonStepDefinition {
     public void sonuclarinJavaIcerdiginiTestEder() {
         String arananKelime="java";
         String actualAramaSonucStr= amazonPage.aramaSonucElementi.getText();
-        Assert.assertFalse(actualAramaSonucStr.contains(arananKelime));
+        Assert.assertTrue(actualAramaSonucStr.contains(arananKelime));
     }
 
     @Then("kullanici samsung icin arama yapar")
@@ -114,7 +114,7 @@ public class AmazonStepDefinition {
     @When("url'nin {string} icerdigini test edelim")
     public void urlNinIcerdiginiTestEdelim(String arananKelime) {
         String actualUrl = Driver.getDriver().getCurrentUrl();
-        Assert.assertTrue(actualUrl.contains(arananKelime));
+        Assert.assertFalse(actualUrl.contains(arananKelime));
 
     }
 
