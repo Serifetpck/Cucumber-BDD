@@ -1,4 +1,5 @@
 Feature: US1009 Ck Hotels Login
+  @syf1
   Scenario: TC11 kullanici gecerli bilgilerle giris yapar
     Given kullanici bluerentacar ana sayfasinda
     Then Login yazisina tiklar
