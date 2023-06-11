@@ -67,7 +67,7 @@ public class AmazonStepDefinition {
     public void sonuclarinJavaIcerdiginiTestEder() {
         String arananKelime="java";
         String actualAramaSonucStr= amazonPage.aramaSonucElementi.getText();
-        Assert.assertTrue(actualAramaSonucStr.contains(arananKelime));
+        Assert.assertFalse(actualAramaSonucStr.contains(arananKelime));
     }
 
     @Then("kullanici samsung icin arama yapar")
